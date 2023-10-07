@@ -1,13 +1,19 @@
-package com.scaler.springtaskmgr;
+package com.scaler.springtaskmgr.Task;
 
 import java.util.Date;
 
 public class Task {
-
     Integer id;
     String title;
     String description;
-    Date dueDate;
+    String dueDate;
+
+    public Task(Integer id, String title, String description, String dueDate) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.dueDate = dueDate;
+    }
 
     public Integer getId() {
         return id;
@@ -33,20 +39,11 @@ public class Task {
         this.description = description;
     }
 
-    public Date getDueDate() {
+    public String getDueDate() {
         return dueDate;
     }
 
-    public void setDueDate(Date dueDate) {
+    public void setDueDate(String dueDate) {
         this.dueDate = dueDate;
     }
-
-    public Task(Integer id, String title, String description, Date dueDate) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.dueDate = dueDate;
-    }
-
-
 }
